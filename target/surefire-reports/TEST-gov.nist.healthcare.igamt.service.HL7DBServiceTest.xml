@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="1.95" errors="0" skipped="0" tests="63" name="gov.nist.healthcare.igamt.service.HL7DBServiceTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="24.79-b02"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/gcr1/Documents/nistWorkplace/old-igamt/igamt"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/gcr1/Documents/nistWorkplace/old-igamt/igamt"/>
+    <property name="java.runtime.version" value="1.7.0_79-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/84/rfzcjymn22l8chnfzfj6rlx0001nd2/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.3.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/gcr1/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.9.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/gcr1"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="gcr1"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.3.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install -f /Users/gcr1/Documents/nistWorkplace/old-igamt/igamt/hl7Tools-service/pom.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_79"/>
+    <property name="java.ext.dirs" value="/Users/gcr1/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.3.3/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.006" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[0]"/>
+  <testcase time="0.392" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[0]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[0]"/>
+  <testcase time="0.25" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[0]"/>
+  <testcase time="0.178" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[0]"/>
+  <testcase time="0.293" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[0]"/>
+  <testcase time="0.14" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[0]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[1]"/>
+  <testcase time="0.011" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[1]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[1]"/>
+  <testcase time="0.024" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[1]"/>
+  <testcase time="0.023" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[1]"/>
+  <testcase time="0.082" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[1]"/>
+  <testcase time="0.064" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[1]"/>
+  <testcase time="0.001" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[2]"/>
+  <testcase time="0.003" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[2]"/>
+  <testcase time="0.051" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[2]"/>
+  <testcase time="0.006" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[2]"/>
+  <testcase time="0.01" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[2]"/>
+  <testcase time="0.032" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[2]"/>
+  <testcase time="0.03" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[2]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[3]"/>
+  <testcase time="0.005" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[3]"/>
+  <testcase time="0.001" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[3]"/>
+  <testcase time="0.008" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[3]"/>
+  <testcase time="0.012" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[3]"/>
+  <testcase time="0.031" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[3]"/>
+  <testcase time="0.033" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[3]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[4]"/>
+  <testcase time="0.005" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[4]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[4]"/>
+  <testcase time="0.009" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[4]"/>
+  <testcase time="0.026" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[4]"/>
+  <testcase time="0.03" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[4]"/>
+  <testcase time="0.04" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[4]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[5]"/>
+  <testcase time="0.003" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[5]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[5]"/>
+  <testcase time="0.004" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[5]"/>
+  <testcase time="0.02" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[5]"/>
+  <testcase time="0.024" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[5]"/>
+  <testcase time="0.022" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[5]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[6]"/>
+  <testcase time="0.003" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[6]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[6]"/>
+  <testcase time="0.005" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[6]"/>
+  <testcase time="0.008" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[6]"/>
+  <testcase time="0.012" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[6]"/>
+  <testcase time="0.015" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[6]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[7]"/>
+  <testcase time="0.001" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[7]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[7]"/>
+  <testcase time="0.002" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[7]"/>
+  <testcase time="0.004" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[7]"/>
+  <testcase time="0.01" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[7]"/>
+  <testcase time="0.009" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[7]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSupportedHL7Versions[8]"/>
+  <testcase time="0.001" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageListByVersion[8]"/>
+  <testcase time="0" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testBuildIGFromMessageList[8]"/>
+  <testcase time="0.001" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetCodeTableListByVersion[8]"/>
+  <testcase time="0.001" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetDatatypeListByVersion[8]"/>
+  <testcase time="0.004" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetSegmentListByVersion[8]"/>
+  <testcase time="0.005" classname="gov.nist.healthcare.igamt.service.HL7DBServiceTest" name="testGetMessageByIdAndVersion[8]"/>
+</testsuite>
